@@ -11,6 +11,11 @@ div.hello {
 .hello span:hover {
   color:#7b6982}
 
+body{ 
+font-family: 'Josefin Sans', sans-serif;
+
+}
+
 footer {
   /* Set font color to white */
   color: #a992b2;
@@ -27,9 +32,4 @@ footer {
   /* Set margin on top to be 60 pixels */
   margin-top: 60px;
  
-}
-
-body{ 
-font-family: 'Josefin Sans', sans-serif;
-
 }
