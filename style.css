@@ -6,6 +6,8 @@ div.hello {
   font-family: 'Baloo Thambi', cursive;
   font-size: 150px;
   color: #a992b2;
+  text-align: center;
+  padding: 20px;
  
 }
 .hello span:hover {
