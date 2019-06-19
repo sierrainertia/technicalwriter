@@ -19,19 +19,10 @@ font-family: 'Josefin Sans', sans-serif;
 }
 
 footer {
-  /* Set font color to white */
   color: #a992b2;
-
-  /* Set background color to black */
   background-color: #fcf7ff;
-
-  /* Set padding on all sides to be 20 pixels */
   padding: 20px;
-
-  /* Set text alignment to center */
   text-align:center;
-
-  /* Set margin on top to be 60 pixels */
   margin-top: 60px;
  
 }
