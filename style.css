@@ -17,7 +17,9 @@ body{
 font-family: 'Josefin Sans', sans-serif;
 
 }
-
+h1 {
+   text-Align: center;
+}
 footer {
   color: #a992b2;
   background-color: #fcf7ff;
