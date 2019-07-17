@@ -8,6 +8,37 @@ main {
   padding: 0px 20px;
 
 }
+
+ol,ul {
+	list-style: none;
+}
+
+#mainMenu {
+	margin: 10px;
+	width: 900px;
+	font-family: sans-serif;
+}
+
+#mainMenu li {
+	display:block;
+	width:120px;
+	float:left;
+	margin-left:2px;
+	border:1px solid #000;
+}
+
+#mainMenu a {
+	display:block;
+	padding:3px;
+	text-decoration:none;
+	background-color:#fff;
+	color:#009;
+}
+
+#mainMenu a:hover {
+	background-color:#009;
+	color:#fff;
+}
 div.hello {
   font-family: 'Baloo Thambi', cursive;
   font-size: 150px;
