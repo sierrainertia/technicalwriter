@@ -15,9 +15,8 @@ ol,ul {
 
 #mainMenu {
 	margin: 10px;
-	width: 900px;
-	font-family: sans-serif;
-}
+	width: calc(100% - 40px);
+	font-family: 'Josefin Sans', sans-serif;
 
 #mainMenu li {
 	display:block;
@@ -31,8 +30,8 @@ ol,ul {
 	display:block;
 	padding:3px;
 	text-decoration:none;
-	background-color:#fff;
-	color:#009;
+	background-color:#fcf7ff;
+	color:#a992b2;
 }
 
 #mainMenu a:hover {
