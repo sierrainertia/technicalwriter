@@ -15,7 +15,7 @@ ol,ul {
 
 #mainMenu {
 	margin: 10px;
-	calc(100% - 40px);
+	width: calc(100% - 40px);
 	font-family: 'Josefin Sans', sans-serif;
 }
 
