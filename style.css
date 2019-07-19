@@ -17,6 +17,8 @@ ol,ul {
 	margin: 10px;
 	width: 100%;
 	font-family: 'Josefin Sans', sans-serif;
+	top: 0;
+	
 }
 
 #mainMenu li {
