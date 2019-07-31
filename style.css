@@ -17,6 +17,9 @@ width: 100%;
   margin: 0 auto;
 }
 
+.name {
+  font-family: 'Montserrat', cursive;
+}
 header .wrapper {
   height: 75px;
   display: flex;
@@ -28,7 +31,7 @@ align-items: center;
   display:inline-block;
   list-style: none;
 	margin: 0;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	padding: 0;
 }
 
@@ -60,10 +63,40 @@ div.hello {
   color: #a992b2;
   text-align: center;
   padding: 20px;
+  position: relative;
  
 }
+.hello::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  pointer-events: auto;
+  /*background-color: blue;*/
+  z-index: 99;
+  left:0;
+}
+.hello::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  height: 92px;
+  pointer-events: auto;
+  /*background-color: blue;*/
+  z-index: 99;
+  left: 0;
+}
+
+.hello span {
+  z-index: 1;
+}
+
 .hello span:hover {
-  color:#7b6982}
+  color:#7b6982
+}
 
 body{ 
 font-family: 'Josefin Sans', sans-serif;
@@ -74,14 +107,41 @@ h1 {
    text-Align: center;
 }
 
+
+
+.circle { 
+  border-radius: 50%;
+  background: url("AppleProject3.PNG");
+  background-size: contain;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: none;
+  color: white;
+  height: 150px;
+  width: 150px;
+  align-items: center;
+  text-align: center;
+}
+
+.circle:hover {
+    background: #7b6982;
+}
+
+.circle:hover .content {
+  display: flex;
+}
 footer {
   color: #a992b2;
   background-color: #4d4d4d;
   padding: 20px;
   text-align:center;
   margin-top: 60px;
-  position: absolute;
   width: calc(100% - 40px);
-  bottom: 0;
  
 }
