@@ -111,7 +111,7 @@ h1 {
 
 .circle { 
   border-radius: 50%;
-  background: url("AppleProject3.PNG");
+  background: url("AppleProject3.png");
   background-size: contain;
   height: 200px;
   width: 200px;
@@ -121,7 +121,7 @@ h1 {
   clip-path: circle(100px at center);
 }
 .circle .bg {
-  background: url("AppleProject3.PNG");
+  background: url("AppleProject3.png");
   background-size: cover;
   position: absolute;
   left: 0;
