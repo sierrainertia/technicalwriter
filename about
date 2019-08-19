@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Thambi" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<title>Sierra MacDonald | Technical Writer</title>
+</head>
+<body>
+	<header>
+	<div class="wrapper">
+		<div class="name">Sierra MacDonald</div>
+	<nav>
+		<ul id="mainMenu">
+			<li><a href="about.html">About Me</a></li>
+			<li><a href="resume.html">Resume</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="contactMe.html">Contact me</a></li>
+		</ul>
+	</nav>	
+	</div>
+	</header>
+<main>
+<div class="wrapper">
+</div>
+</main>
+ <footer>Copyright Sierra</footer>
+</body>
+  </html>
