@@ -1,6 +1,6 @@
 body {
    background-color: #dcd3df;
-  
+
 }
 main {
   max-width: 100%;
@@ -64,7 +64,7 @@ div.hello {
   text-align: center;
   padding: 20px;
   position: relative;
- 
+
 }
 .hello::before {
   content: "";
@@ -98,7 +98,7 @@ div.hello {
   color:#7b6982
 }
 
-body{ 
+body{
 font-family: 'Josefin Sans', sans-serif;
 margin:0px;
 
@@ -109,16 +109,15 @@ h1 {
 
 
 
-.circle { 
+.circle {
   border-radius: 50%;
-  background: url("AppleProject3.png");
-  background-size: contain;
   height: 200px;
   width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   clip-path: circle(100px at center);
+  position: relative;
 }
 .circle .bg {
   background: url("AppleProject3.png");
@@ -131,22 +130,22 @@ h1 {
   transition: filter 150ms linear;
 }
 .content {
-  display: none;
   color: white;
-  height: 150px;
-  width: 150px;
   align-items: center;
   text-align: center;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 150ms linear;
 }
 
-.circle:hover {
+.circle:hover .bg {
   filter: blur(5px) brightness(80%);
     /*background: url("AppleProject3blur.png");*/
     /*background-size: contain;*/
 }
 
 .circle:hover .content {
-  display: flex;
+  opacity: 1;
 }
 footer {
   color: #a992b2;
@@ -155,5 +154,5 @@ footer {
   text-align:center;
   margin-top: 60px;
   width: calc(100% - 40px);
- 
+
 }
