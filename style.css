@@ -107,7 +107,9 @@ h1 {
    text-Align: center;
 }
 
-
+.aboutme {
+  color: #706e73;
+}
 
 .circle {
   border-radius: 50%;
