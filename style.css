@@ -159,7 +159,7 @@ footer {
 
 }
 
-.portfolio h1{
+.portfolio h2{
 color:#706e73;
 font-weight: bold;
 font-size: 35px;
@@ -168,7 +168,7 @@ margin-top: 30px;
 border-bottom: 1px solid #706e73;
 }
 
-.portfolio h2{
+.portfolio p{
   color:#706e73;
   font-size: 14px;
   font-weight: normal;
