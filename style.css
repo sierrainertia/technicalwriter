@@ -214,6 +214,7 @@ h2 {
 
 .home-page-portfolio {
   display: flex;
+margin-top: 60px;
 }
 
 .home-page-portfolio > .circle {
