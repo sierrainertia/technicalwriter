@@ -136,6 +136,7 @@ h1 {
   justify-content: center;
   width: 200px;
   height: 200px;
+  text-decoration: none;
   border-radius: 50%;
   clip-path: circle(100px at center);
 }
@@ -146,8 +147,6 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transition: filter 150ms linear;
 }
 
 .content {
@@ -165,16 +164,30 @@ h1 {
   font-weight: bold;
 }
 
-.circle:hover .bg {
-  filter: blur(5px) brightness(60%);
+.circle .bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 150ms linear;
 }
 
-.circle:hover .content {
+.circle:hover .bg img.blurred {
   opacity: 1;
 }
 
-.circle:hover {
-  text-decoration: none;
+.circle .bg img.blurred {
+  opacity: 0;
+  filter: blur(5px) brightness(60%);
+}
+
+/* .circle:hover .bg {
+} */
+
+.circle:hover .content {
+  opacity: 1;
 }
 
 footer {
