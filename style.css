@@ -123,6 +123,7 @@ h1 {
 .aboutme {
   color: #706e73;
   line-height: 1.4;
+margin-bottom: 10px;
 }
 
 .aboutme p:first-child {
@@ -223,7 +224,6 @@ h2 {
 }
 
 .portfolio {
-	margin-top: 10px;
 	border-top: 1px solid #706e73;
 	font-size: 50px;
 	Text-align: center;
