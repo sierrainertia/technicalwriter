@@ -222,6 +222,12 @@ h2 {
   text-align: center;
 }
 
+.portfolio {
+	border-top: 1px solid #706e73;
+	font-size: 50px;
+	Text-align: center;
+	color: #706e73;
+
 .home-page-portfolio {
   display: flex;
 margin-top: 60px;
