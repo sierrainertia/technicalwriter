@@ -37,10 +37,10 @@
       .LeftSection {
         flex: 1;
         background-image: url(paper.png);
-        padding: 100px 0;
+        padding: 100px 0 0;
         box-shadow: 0 0 25px #bbb;
         z-index: 1;
-        /* overflow-y: scroll; */
+        overflow-y: hidden;
       }
 
       .LeftSection__portrait-image {
@@ -232,6 +232,7 @@
         }
         .LeftSection {
           overflow: visible;
+          min-height: min-content;
         }
         .RightSection {
           overflow: visible;
