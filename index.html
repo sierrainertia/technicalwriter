@@ -1,103 +1,444 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link href="style.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Baloo+Thambi"
-			rel="stylesheet">
-		<!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> -->
-		<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap"
-			rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
-			rel="stylesheet">
-		<link rel="icon" href="pencil.png">
-		<title>Sierra MacDonald | Technical Writer</title>
-	</head>
-	<body>
-		<header>
-			<div class="wrapper">
-				<a href="/" class="name">Sierra MacDonald - Technical Writer</a>
-				<nav>
-					<ul id="mainMenu">
-						<li><a href="resume.html">Resume</a></li>
-						<li><a href="mailto:sierramacdonald.tw@gmail.com">Contact me</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<main>
-			<div class="hello">
+<html lang="en">
+  <head>
+    <!-- <link href="style.css" rel="stylesheet" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A bright technical writer with a unique combination of technology
+		and writing experience."
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Leckerli+One|Lora:400,400i,700,700i&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="quill.png" />
+    <style>
+      html,
+      body {
+        --sierra: #4e395d;
+        height: 100%;
+        margin: 0;
+        font-family: "Lora", serif;
+      }
+      main {
+        display: flex;
+        height: 100%;
+      }
+      a {
+        color: var(--sierra);
+      }
 
-				<span>H</span><span>e</span><span>l</span><span>l</span><span>o</span><span>!</span>
-			</div>
-			<div class="wrapper">
-				<div class="aboutme">
-					<p>My Name is Sierra MacDonald. I am a Computer Networking graduate
-						currently working towards a certificate in Technical Writing. I am
-						extremely passionate about how technical writing can help solve business
-						problems and enable users to access different softwares and technology
-						with ease.</p>
-					<p>
-						In 2018 I graduated from Seneca College in Toronto, Ontario and since then
-						I have been advancing my technical and non-technical skills through school
-						and personal pursuits. Including creating this webpage to work on my web
-						design skills!</p>
-					<p>I believe that my experience with technology, alongside my experience
-						with technical writing give me the unique ability to take complex
-						technical information and relay it in a simple, user-friendly, and
-						readable way. Below are a few examples of different projects I have worked
-						on in school.
-					</p>
-				</div>
-				<div class="portfolio">
-					Portfolio
-				</div>
-				<div class="home-page-portfolio">
-					<a href="/files/AppleTVGuide.pdf" class="circle">
-						<div class="content">
-							<div class="title">
-								Apple TV User Guide - Sample Chapter
-							</div>
-							<div class="subtitle">
-								Technical Writing Final Project
-							</div>
-						</div>
-						<div class="bg">
-							<img src="AppleProject3.png">
-							<img src="AppleProject3.png" class="blurred">
-						</div>
-					</a>
-					<a href="/files/TutoringAppointment.pdf" class="circle">
-						<div class="content">
-							<div class="title">
-								Tutoring Appointment Instructions
-							</div>
-							<div class="subtitle">
-								Semester 4 Final Project
-							</div>
-						</div>
-						<div class="bg">
-							<img src="appointment.png">
-							<img src="appointment.png" class="blurred">
-						</div>
-					</a>
-					<a href="/files/iSeriesSecurity.pdf" class="circle">
-						<div class="content">
-							<div class="title">
-								IBM iSeries - Security Implementation Proposal
-							</div>
-							<div class="subtitle">
-								Semester 4 Final Project
-							</div>
-						</div>
-						<div class="bg">
-							<img src="iseries.png">
-							<img src="iseries.png" class="blurred">
-						</div>
-					</a>
-					
-				</div>
-			</div>
-		</main>
-		<!-- <footer>Copyright Sierra</footer> -->
-	</body>
+      .RightSection {
+        flex: 2;
+        background: #fafafa;
+      }
+
+      .LeftSection {
+        flex: 1;
+        background-image: url(paper.png);
+        padding: 100px 0;
+        box-shadow: 0 0 25px #bbb;
+        z-index: 1;
+        /* overflow-y: scroll; */
+      }
+
+      .LeftSection__portrait-image {
+        margin: 0 auto;
+        display: block;
+        border-radius: 50%;
+        border: 5px solid var(--sierra);
+        max-width: 250px;
+      }
+
+      .LeftSection h1 {
+        font-size: 48px;
+        font-family: "Leckerli One", cursive;
+        text-align: center;
+        color: var(--sierra);
+        margin: 30px 0;
+        position: relative;
+      }
+
+      /* .LeftSection h1::before {
+          content: "My name is";
+          position: absolute;
+          color: black;
+          font-size: 16px;
+          top: -15px;
+          margin-left: 20px;
+          font-weight: normal;
+          font-family: sans-serif;
+        } */
+
+      .LeftSection .LeftSection__about-container {
+        text-align: center;
+        margin: 30px 35px;
+      }
+
+      .LeftSection .LeftSection__about-container p {
+        margin-bottom: 35px;
+      }
+
+      .CtaButton {
+        display: inline-block;
+        font-family: sans-serif;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 4px;
+        border: 3px solid var(--sierra);
+        font-weight: bold;
+        font-size: 18px;
+        color: var(--sierra);
+        padding: 15px;
+        padding-bottom: 12px;
+        margin-bottom: 20px;
+      }
+
+      .CtaButton:hover {
+        background-color: var(--sierra);
+        color: white;
+        cursor: pointer;
+      }
+
+      .LeftSection nav {
+        margin-top: 20px;
+        margin-bottom: 35px;
+      }
+
+      .LeftSection nav a {
+        margin: 0;
+        font-size: 16px;
+      }
+
+      .LeftSection nav a:not(:first-of-type)::before {
+        content: "|";
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+        cursor: default;
+      }
+
+      .LeftSection__praise-container a {
+        font-size: 14px;
+      }
+
+      .LeftSection__praise-container a:nth-of-type(2) {
+        display: block;
+        margin-top: 5px;
+      }
+
+      .LeftSection,
+      .RightSection {
+        max-height: 100%;
+        overflow-y: scroll;
+      }
+
+      .RightSection__header {
+        padding: 10px 30px;
+        margin: 65px 0 0;
+        font-weight: bold;
+        font-size: 36px;
+        text-align: center;
+        display: block;
+        width: 100%;
+        z-index: 1;
+        box-sizing: border-box;
+      }
+
+      .RightSection__header::after {
+        content: "";
+        background-image: url(fancy.svg);
+        height: 40px;
+        width: 300px;
+        display: block;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 15px auto;
+      }
+
+      .PortfolioItem {
+        position: relative;
+        height: 300px;
+        overflow: hidden;
+        display: flex;
+      }
+
+      .PortfolioItem section {
+        flex: 1;
+      }
+
+      .PortfolioItem:nth-of-type(2n) {
+        flex-direction: row-reverse;
+      }
+
+      .PortfolioItem:nth-of-type(2n) section {
+        text-align: right;
+      }
+
+      .PortfolioItem__title {
+        font-weight: bold;
+        font-size: 24px;
+        margin: 10px 0;
+      }
+
+      .PortfolioItem img {
+        box-shadow: 0px 0px 10px 0px rgba(148, 148, 148, 1);
+        display: block;
+        margin: 0 auto;
+        width: 500px;
+      }
+
+      .RightSection article {
+        border-bottom: 2px dashed #999;
+        padding: 30px;
+      }
+
+      .RightSection article:last-of-type {
+        border-bottom: none;
+      }
+
+      .PortfolioItem__download-link {
+        margin-top: 10px;
+      }
+
+      .PortfolioItem__download-link a {
+        font-weight: bold;
+        font-style: italic;
+      }
+
+      .StoryItem p {
+        line-height: 1.4;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 25px;
+      }
+
+      .StoryItem p:first-of-type {
+        margin-top: 0;
+      }
+
+      .wrapper {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      @media only screen and (max-width: 1024px) {
+        main {
+          flex-direction: column;
+          max-height: 100%;
+          overflow-y: scroll;
+        }
+        .LeftSection {
+          overflow: visible;
+        }
+        .RightSection {
+          overflow: visible;
+          max-height: none;
+        }
+        .wrapper {
+          width: auto;
+          margin: auto;
+        }
+        .PortfolioItem {
+          flex-direction: column !important;
+        }
+        .PortfolioItem section {
+          text-align: left !important;
+        }
+        .PortfolioItem section:first-child {
+          margin-bottom: 40px;
+        }
+      }
+    </style>
+    <title>Sierra MacDonald | Technical Writer</title>
+  </head>
+  <body>
+    <main>
+      <section class="LeftSection">
+        <header>
+          <picture>
+            <source type="image/webp" srcset="images/sierra-macdonald.webp" />
+            <img
+              src="images/sierra-macdonald.jpg"
+              alt="Portrait of Sierra MacDonald"
+              class="LeftSection__portrait-image"
+            />
+          </picture>
+          <h1>
+            Sierra MacDonald
+          </h1>
+          <div class="LeftSection__about-container">
+            <p>
+              A bright technical writer with a unique combination of technology
+              and writing experience.
+            </p>
+            <nav>
+              <a href="#portfolio">My portfolio</a><a href="#about">My story</a>
+            </nav>
+            <a class="CtaButton" href="mailto:sierramacdonald.tw@gmail.com"
+              >Work with me</a
+            >
+            <div class="LeftSection__praise-container">
+              <a href="sm-resume.pdf">Resume</a>
+              <a href="https://www.linkedin.com/in/sierra-inertia">LinkedIn</a>
+            </div>
+          </div>
+        </header>
+      </section>
+      <section class="RightSection">
+        <header class="RightSection__header" id="portfolio">
+          My portfolio
+        </header>
+        <article class="PortfolioItem">
+          <section>
+            <div class="PortfolioItem__title">
+              Coffee vs Espresso - Comparison Report
+            </div>
+            <div>
+              Document Design Assignment
+            </div>
+            <div class="PortfolioItem__download-link">
+              <a href="/files/coffeeVSespresso.pdf">
+                Download
+              </a>
+            </div>
+          </section>
+          <section>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="images/coffeeVSespresso_page-0002.webp"
+              />
+              <img
+                src="images/coffeeVSespresso_page-0002.jpg"
+                alt="Page 2 of Coffee vs Espresso Comparison Table"
+              />
+            </picture>
+          </section>
+        </article>
+        <article class="PortfolioItem">
+          <section>
+            <div class="PortfolioItem__title">
+              Apple TV User Guide - Sample Chapter
+            </div>
+            <div>
+              Technical Writing Final Project
+            </div>
+            <div class="PortfolioItem__download-link">
+              <a href="/files/AppleTVGuide.pdf">
+                Download
+              </a>
+            </div>
+          </section>
+          <section>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="images/AppleTVGuide_pages-to-jpg-0003.webp"
+              />
+              <img
+                src="images/AppleTVGuide_pages-to-jpg-0003.jpg"
+                alt="Screenshot of page 3 of Apple TV giude"
+              />
+            </picture>
+          </section>
+        </article>
+        <article class="PortfolioItem">
+          <section>
+            <div class="PortfolioItem__title">
+              How to Book a Tutoring Appointment
+            </div>
+            <div>
+              Semester 4 Final Project
+            </div>
+            <div class="PortfolioItem__download-link">
+              <a href="/files/TutoringAppointment.pdf">
+                Download
+              </a>
+            </div>
+          </section>
+          <section>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="images/TutoringAppointment_page-0002.webp"
+              />
+              <img
+                src="images/TutoringAppointment_page-0002.jpg"
+                alt="Page 2 of tutoring appointment how to document"
+              />
+            </picture>
+          </section>
+        </article>
+        <article class="PortfolioItem">
+          <section>
+            <div class="PortfolioItem__title">
+              IBM iSeries - Security Implementation Proposal
+            </div>
+            <div>
+              Semester 4 Final Project
+            </div>
+            <div class="PortfolioItem__download-link">
+              <a href="/files/iSeriesSecurity.pdf">
+                Download
+              </a>
+            </div>
+          </section>
+          <section>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="images/iSeriesSecurity_page-0003.webp"
+              />
+              <img
+                src="images/iSeriesSecurity_page-0003.jpg"
+                alt="iSeries Security document"
+              />
+            </picture>
+          </section>
+        </article>
+        <header class="RightSection__header" id="about">My story</header>
+        <article class="StoryItem">
+          <div class="wrapper">
+            <p>
+              My Name is Sierra MacDonald. I am a Computer Networking graduate
+              currently working towards a certificate in Technical Writing. I am
+              extremely passionate about how technical writing can help solve
+              business problems and enable users to access different softwares
+              and technology with ease.
+            </p>
+            <p>
+              In 2018 I graduated from Seneca College in Toronto, Ontario and
+              since then I have been advancing my technical and non-technical
+              skills through school and personal pursuits. Including creating
+              this webpage to work on my web design skills!
+            </p>
+            <p>
+              I believe that my experience with technology, alongside my
+              experience with technical writing give me the unique ability to
+              take complex technical information and relay it in a simple,
+              user-friendly, and readable way. Below are a few examples of
+              different projects I have worked on in school.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script>
+      // The following is used to smooth scroll anchor links
+      document.querySelectorAll("a").forEach(link => {
+        if (link.getAttribute("href").startsWith("#")) {
+          link.addEventListener("click", e => {
+            e.preventDefault()
+
+            document.querySelector(link.getAttribute("href")).scrollIntoView({
+              behavior: "smooth"
+            })
+          })
+        }
+      })
+    </script>
+  </body>
 </html>
